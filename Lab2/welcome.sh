@@ -1,8 +1,10 @@
 #!/bin/bash
-planet = 'hostname'
+#This script prints out a welcome message using variables and command substitution
 
 export MYNAME="Lucas Carroll"
-
 MYTITLE="Captain"
 
-echo "Welcome to planet Gentoo" $MYTITLE $MYNAME
+planet=`hostname`
+weekday=$(date +%A)
+echo "Welcome to planet $planet, $MYTITLE $MYNAME!"
+echo "Today is $weekday."
