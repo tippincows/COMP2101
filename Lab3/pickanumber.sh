@@ -5,4 +5,4 @@ num1=$((RANDOM%10 +1))
 
 read -p "Please enter a number" num2
 
-if [
+if [ num2 
