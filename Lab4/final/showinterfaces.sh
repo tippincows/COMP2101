@@ -117,7 +117,7 @@ function error
 			fi
 				
 			done	
-			exit 1
+			exit 0
 				
 	;;
 		-r | --route )
@@ -129,25 +129,25 @@ function error
 			then
 				echo "$2 has the default gateway of: ${gateway[0]}"
 				shift
-				exit 1
+				exit 0
 				
 			elif [[ $2 = ${interface[1]} ]];
 			then
 				echo "$2 has the default gateway of: ${gateway[1]}"
 				shift
-				exit 1
+				exit 0
 				
 			elif [[ $2 = ${interface[2]} ]];
 			then
 				echo "$2 has the default gateway of: ${gateway[2]}"
 				shift
-				exit 1
+				exit 0
 				
 			elif [[ $2 = ${interface[3]} ]];
 			then
 				echo "$2 has the default gateway of: ${gateway[3]}"
 				shift
-				exit 1
+				exit 0
 				
 			else
 				error "Please enter a valid interface"
